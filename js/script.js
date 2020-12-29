@@ -10,7 +10,8 @@ hamburger.addEventListener("click", function () {
 const deroulant = document.getElementById("deroulant");
 const dropdown = document.getElementById("dropdown-1");
 const chevron = document.querySelector("#deroulant .fa-chevron-down");
-deroulant.addEventListener("click", function () {
+deroulant.addEventListener("click", function (e) {
+	e.preventDefault();
 	dropdown.classList.toggle("show");
 	if(window.matchMedia("(min-width: 950px)").matches){
 		chevron.classList.add("fa-chevron-down");
@@ -24,7 +25,8 @@ deroulant.addEventListener("click", function () {
 const deroulant2 = document.getElementById("deroulant-2");
 const dropdown2 = document.getElementById("dropdown-2");
 const chevron2 = document.querySelector("#deroulant-2 .fa-chevron-down");
-deroulant2.addEventListener("click", function () {
+deroulant2.addEventListener("click", function (e) {
+	e.preventDefault();
 	dropdown2.classList.toggle("show");
 	if(window.matchMedia("(min-width: 950px)").matches){
 		chevron2.classList.add("fa-chevron-down");
@@ -44,7 +46,7 @@ const chevronUp = document.createElement("i");
 upButton.classList.add("upButton");
 chevronUp.classList.add("fas", "fa-chevron-up");
 upButton.append(chevronUp);
-document.body.appendChild(upButton);
+document.body.append(upButton);
 
 window.addEventListener("scroll", function() {
 	if (window.scrollY > 500) {
