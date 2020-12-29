@@ -22,7 +22,6 @@ html
 {
 	font-family: 'Raleway', sans-serif;
 	font-size: clamp(0.95rem, 1vw, 1rem);
-	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 body
@@ -1144,12 +1143,12 @@ footer .github a
     opacity: 0;
     transform: translateX(-160px);
 }
-.reveal-right
+.reveal-top
 {
     opacity: 0;
-    transform: translateX(160px);
+    transform: translateY(-40px);
 }
-.reveal-show-right
+.reveal-show-top
 {
     opacity: 1;
     transform: translateY(0);
