@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Guide du sauveteur secouriste du travail (SST), pour apprendre les bases du secourisme en passant par la méthode prefas (protéger, examiner, faire alerter, secourir).">
+		<meta name="keywords" content="sst, massage cardiaque, sauveteur secouriste du travail, secourisme, cours, formation, pls, quiz, prefas, guide, premier secours">
+		<meta name="robots" content="index, follow">
+		<link rel="stylesheet" href="../css/reset.css">
+  		<link rel="stylesheet" href="../css/style.css">
+  		<link rel="icon" type="image/x-icon" href="../images/logo-sst.png">
+  		<script src="../js/script.js" async></script>
+  		<link href="../webfonts-css/all.css" rel="stylesheet">
+		<title>Guide SST - Quiz</title>
+	</head>
+	<body>
+		<header>
+			<a href="../index.html"><img src="../images/logo-sst.png" alt="Logo SST"></a>
+			<div>
+			<h1>Guide du <br> Sauveteur Secouriste du Travail</h1>
+			</div>
+		</header>
+		<nav>
+			<button class="hamburger" id="hamburger">
+				<span></span>
+			</button>
+				<ul id="nav-ul">
+					<li><a href="../index.html"><i class="fas fa-home"></i>Accueil</a></li>
+					<li><a href="#" class="deroulant" id="deroulant"><i class="fas fa-book"></i>Prefas<i class="fas fa-chevron-down"></i></a>
+						<ul class="dropdown" id="dropdown-1">
+							<li><a href="la_conduite_a_tenir.html"><i class="fas fa-book-reader"></i>La conduite à tenir</a></li>
+							<li><a href="proteger.html"><i class="fas fa-shield-alt"></i>Protéger</a></li>
+							<li><a href="examiner.html"><i class="fas fa-diagnoses"></i>Examiner</a></li>
+							<li><a href="alerter.html"><i class="fas fa-bell"></i>Alerter</a></li>
+							<li><a href="secourir.html"><i class="fas fa-first-aid"></i>Secourir</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="deroulant" id="deroulant-2"><i class="far fa-hand-paper"></i>Gestes à faire sur<i class="fas fa-chevron-down"></i></a>
+						<ul class="dropdown" id="dropdown-2">
+							<li><a href="nourrisson.html"><i class="fas fa-baby"></i>Un nourrisson <span class="italic lowercase"> (0 à 1 an)</span></a></li>
+							<li><a href="enfant.html"><i class="fas fa-child"></i>Un enfant <span class="italic lowercase">(1 à 8 ans)</span></a></li>
+							<li><a href="secourir.html"><i class="fas fa-user"></i>Un adulte <span class="italic lowercase">(plus de 8 ans)</span></a></li>
+						</ul>
+					</li>
+					<li><a href="quiz.html"><i class="fas fa-th-list"></i>Quiz</a></li>
+					<li><a href="contact.html"><i class="fas fa-address-book"></i>En savoir plus</a></li>
+				</ul>
+		</nav>
+
+		<div class="titre">
+		<h2>Quiz</h2>
+		<p>dernière mise à jour le 13/11/2020</p>
+		</div>
+
+		<article>
+			<h3>Testez vos compétences !</h3>
+			<div class="hr2"></div>
+
+			<p>Rien de tel que des mises en situations pour mettre à l'épreuve vos connaissances. Vous aurez besoin d'avoir vu <a href="secourir.html">mon cours</a> pour pouvoir répondre correctement aux questions du <strong class="nobold">quiz</strong> !</p>
+
+			<div class="result d-none">
+				<div class="hr2"></div>
+				<p>Vous avez un total de : <span>0</span> de bonnes réponses.</p>
+				<p id="quiz-comment"></p>
+				<button id="resetButton">Recommencer</button>
+			</div>
+			
+			<div class="hr2"></div>
+
+			<form class="quiz" id="quiz">
+				
+				<h4>Question 1 : <span class="green">Que veut dire SST ?</span><i class="question-icon fas fa-check"></i><i class="question-icon fas fa-times"></i></h4>
+					<div>
+						<input type="radio" name="q1" value="q1-wrong" id="sst-1" class="radio-custom">
+						<label for="sst-1" class="radio-custom-label">Sauveteur secouriste témoin</label>
+					</div>
+					<div>
+						<input type="radio" name="q1" value="q1-right" id="sst-2" class="radio-custom">
+						<label for="sst-2" class="radio-custom-label">Sauveteur secouriste du travail</label>
+					</div>
+					<div>
+						<input type="radio" name="q1" value="q1-wrong" id="sst-3" class="radio-custom">
+						<label for="sst-3" class="radio-custom-label">Soin du secouriste du travail</label>
+					</div>
+					<div>
+						<input type="radio" name="q1" value="q1-wrong" id="sst-4" class="radio-custom">
+						<label for="sst-4" class="radio-custom-label">Sauvetage du secouriste du travail</label>
+					</div>
+				
+				<div class="hr2"></div>
+
+				<h4>Question 2 : <span class="green">Dans quel ordre doit-ton examiner l'état d'une victime ?</span><i class="question-icon fas fa-check"></i><i class="question-icon fas fa-times"></i></h4>
+
+					<div>
+						<input type="radio" name="q2" value="q2-wrong" id="examen-1" class="radio-custom">
+						<label for="examen-1" class="radio-custom-label">Conscience, respiration, saignement, étouffement</label>
+					</div>
+					<div>
+						<input type="radio" name="q2" value="q2-wrong" id="examen-2" class="radio-custom">
+						<label for="examen-2" class="radio-custom-label">Saignement, conscience, étouffement, respiration</label>
+					</div>
+					<div>
+						<input type="radio" name="q2" value="q2-right" id="examen-3" class="radio-custom">
+						<label for="examen-3" class="radio-custom-label">Saignement, étouffement, conscience, respiration</label>
+					</div>
+					<div>
+						<input type="radio" name="q2" value="q2-wrong" id="examen-4" class="radio-custom">
+						<label for="examen-4" class="radio-custom-label">Respiration, étouffement, conscience, saignement</label>
+					</div>
+
+				<div class="hr2"></div>
+
+				<h4>Question 3 : <span class="green">En quoi consiste la méthode décrite par Heimlich ?</span><i class="question-icon fas fa-check"></i><i class="question-icon fas fa-times"></i></h4>
+	
+					<div>
+						<input type="radio" name="q3" value="q3-wrong" id="heimlich-1" class="radio-custom">
+						<label for="heimlich-1" class="radio-custom-label">À faire 5 tapes dans le dos.</label>
+					</div>
+					<div>
+						<input type="radio" name="q3" value="q3-wrong" id="heimlich-2" class="radio-custom">
+						<label for="heimlich-2" class="radio-custom-label">À pratiquer immédiatement une réanimation cardio-pulmonaire.</label>
+					</div>
+					<div>
+						<input type="radio" name="q3" value="q3-right" id="heimlich-3" class="radio-custom">
+						<label for="heimlich-3" class="radio-custom-label">À faire de 1 à 5 compressions abdominales.</label>
+					</div>
+					<div>
+						<input type="radio" name="q3" value="q3-wrong" id="heimlich-4" class="radio-custom">
+						<label for="heimlich-4" class="radio-custom-label">À l'encourager à tousser.</label>
+					</div>
+
+				<div class="hr2"></div>
+
+				<h4>Question 4 : <span class="green">Je trouve une victime au sol inconsciente et qui ne respire pas, que dois-je faire en premier ?</span><i class="question-icon fas fa-check"></i><i class="question-icon fas fa-times"></i></h4>
+	
+					<div>
+						<input type="radio" name="q4" value="q4-right" id="situation1-1" class="radio-custom">
+						<label for="situation1-1" class="radio-custom-label">Après les phases de protection et d'examen, j'alerte les secours en premier.</label>
+					</div>
+					<div>
+						<input type="radio" name="q4" value="q4-wrong" id="situation1-2" class="radio-custom">
+						<label for="situation1-2" class="radio-custom-label">Après les phases de protection et d'examen, je commence le massage cardiaque.</label>
+					</div>
+					<div>
+						<input type="radio" name="q4" value="q4-wrong" id="situation1-3" class="radio-custom">
+						<label for="situation1-3" class="radio-custom-label">Après les phases de protection et d'examen, je met la victime en position latérale de sécurité.</label>
+					</div>
+					<div>
+						<input type="radio" name="q4" value="q4-wrong" id="situation1-4" class="radio-custom">
+						<label for="situation1-4" class="radio-custom-label">Après les phases de protection et d'examen, je demande de l'aide.</label>
+					</div>
+
+				<div class="hr2"></div>
+
+				<h4>Question 5 : <span class="green">Que signifie RCP ?</span><i class="question-icon fas fa-check"></i><i class="question-icon fas fa-times"></i></h4>
+					<div>
+						<input type="radio" name="q5" value="q5-wrong" id="rcp1" class="radio-custom">
+						<label for="rcp1" class="radio-custom-label">Réanimation cardiaque des poumons</label>
+					</div>
+					<div>
+						<input type="radio" name="q5" value="q5-wrong" id="rcp2" class="radio-custom">
+						<label for="rcp2" class="radio-custom-label">Respiration cardio-pulmonaire</label>
+					</div>
+					<div>
+						<input type="radio" name="q5" value="q5-wrong" id="rcp3" class="radio-custom">
+						<label for="rcp3" class="radio-custom-label">Respiration pulmonaire-cardiaque</label>
+					</div>
+					<div>
+						<input type="radio" name="q5" value="q5-right" id="rcp4" class="radio-custom">
+						<label for="rcp4" class="radio-custom-label">Réanimation cardio-pulmonaire</label>
+					</div>
+
+				<div class="hr2"></div>
+
+				<h4>Question 6 : <span class="green">Une personne chute de 5m de haut, hurle de douleur au niveau du dos et perd ensuite connaissance mais respire toujours. Que dois-je faire ? </span><i class="question-icon fas fa-check"></i><i class="question-icon fas fa-times"></i></h4>
+	
+					<div>
+						<input type="radio" name="q6" value="q6-right" id="situation2-1" class="radio-custom">
+						<label for="situation2-1" class="radio-custom-label">Je la met en PLS, j'appelle les secours et surveille son état.</label>
+					</div>
+					<div>
+						<input type="radio" name="q6" value="q6-wrong" id="situation2-2" class="radio-custom">
+						<label for="situation2-2" class="radio-custom-label">J'appelle les secours et je commence la RCP.</label>
+					</div>
+					<div>
+						<input type="radio" name="q6" value="q6-wrong" id="situation2-3" class="radio-custom">
+						<label for="situation2-3" class="radio-custom-label">J'appelle les secours, je ne déplace pas la victime et surveille son état.</label>
+					</div>
+					<div>
+						<input type="radio" name="q6" value="q6-wrong" id="situation2-4" class="radio-custom">
+						<label for="situation2-4" class="radio-custom-label">Je la met en PLS et surveille son état.</label>
+					</div>
+
+				<div class="hr2"></div>
+
+				<h4>Question 7 : <span class="green">Je découvre un ouvrier au sol, inconscient et avec une perceuse à la main. Que dois-je faire?</span><i class="question-icon fas fa-check"></i><i class="question-icon fas fa-times"></i></h4>
+	
+					<div>
+						<input type="radio" name="q7" value="q7-wrong" id="situation3-1" class="radio-custom">
+						<label for="situation3-1" class="radio-custom-label">Appeler les secours et examiner la victime sans tarder.</label>
+					</div>
+					<div>
+						<input type="radio" name="q7" value="q7-wrong" id="situation3-2" class="radio-custom">
+						<label for="situation3-2" class="radio-custom-label">Examiner la victime en premier.</label>
+					</div>
+					<div>
+						<input type="radio" name="q7" value="q7-right" id="situation3-3" class="radio-custom">
+						<label for="situation3-3" class="radio-custom-label">Débrancher et éloigner la perceuse en premier.</label>
+					</div>
+					<div>
+						<input type="radio" name="q7" value="q7-wrong" id="situation3-4" class="radio-custom">
+						<label for="situation3-4" class="radio-custom-label">Pratiquer un dégagement d'urgence.</label>
+					</div>
+
+				<div class="hr2"></div>
+
+				<h4>Question 8 : <span class="green">Mon enfant s'étouffe avec un petit jouet, il devient tout rouge et n'arrive plus à tousser. Que dois-je faire ?</span><i class="question-icon fas fa-check"></i><i class="question-icon fas fa-times"></i></h4>
+					<div>
+						<input type="radio" name="q8" value="q8-wrong" id="situation4-1" class="radio-custom">
+						<label for="situation4-1" class="radio-custom-label">Le laisser dans la position où il se sent le mieux et appeler les secours.</label>
+					</div>
+					<div>
+						<input type="radio" name="q8" value="q8-wrong" id="situation4-2" class="radio-custom">
+						<label for="situation4-2" class="radio-custom-label">Lui donner de 1 à 5 tapes vigoureuses dans le dos uniquement.</label>
+					</div>
+					<div>
+						<input type="radio" name="q8" value="q8-right" id="situation4-3" class="radio-custom">
+						<label for="situation4-3" class="radio-custom-label">Lui donner de 1 à 5 tapes vigoureuses dans le dos et réaliser la méthode d'Heimlich en faisant de 1 à 5 compressions abdominales.</label>
+					</div>
+					<div>
+						<input type="radio" name="q8" value="q8-wrong" id="situation4-4" class="radio-custom">
+						<label for="situation4-4" class="radio-custom-label">L'encourager à tousser et ne surtout pas lui donner des tapes dans le dos.</label>
+					</div>
+
+				<div class="hr2"></div>
+
+				<h4>Question 9 : <span class="green">Mon enfant vient d'avaler un produit toxique, que dois-je faire ?</span><i class="question-icon fas fa-check"></i><i class="question-icon fas fa-times"></i></h4>
+	
+					<div>
+						<input type="radio" name="q9" value="q9-wrong" id="situation5-1" class="radio-custom">
+						<label for="situation5-1" class="radio-custom-label">L'amener le plus vite possible à l'hôpital en voiture.</label>
+					</div>
+					<div>
+						<input type="radio" name="q9" value="q9-wrong" id="situation5-2" class="radio-custom">
+						<label for="situation5-2" class="radio-custom-label">Appeller les secours et lui donner de l'eau minerale pour diluer le produit toxique.</label>
+					</div>
+					<div>
+						<input type="radio" name="q9" value="q9-wrong" id="situation5-3" class="radio-custom">
+						<label for="situation5-3" class="radio-custom-label">Le faire vomir pour enlever le produit toxique le plus vite de son corps.</label>
+					</div>
+					<div>
+						<input type="radio" name="q9" value="q9-right" id="situation5-4" class="radio-custom">
+						<label for="situation5-4" class="radio-custom-label">Demander un avis médical et surtout ne pas faire vomir et/ou ne pas lui donner à boire.</label>
+					</div>
+
+				<div class="hr2"></div>
+
+				<h4>Question 10 : <span class="green">À un repas de famille, mon grand-père tousse depuis presque 1 minute. Que dois-je faire ?</span><i class="question-icon fas fa-check"></i><i class="question-icon fas fa-times"></i></h4>
+	
+					<div>
+						<input type="radio" name="q10" value="q10-wrong" id="situation6-1" class="radio-custom">
+						<label for="situation6-1" class="radio-custom-label">Lui donner de 1 à 5 tapes vigoureuses dans le dos.</label>
+					</div>
+					<div>
+						<input type="radio" name="q10" value="q10-wrong" id="situation6-2" class="radio-custom">
+						<label for="situation6-2" class="radio-custom-label">Réaliser la méthode d'Heimlich en faisant de 1 à 5 compressions abdominales.</label>
+					</div>
+					<div>
+						<input type="radio" name="q10" value="q10-right" id="situation6-3" class="radio-custom">
+						<label for="situation6-3" class="radio-custom-label">L'encourager à tousser et ne surtout pas lui donner des tapes dans le dos.</label>
+					</div>
+					<div>
+						<input type="radio" name="q10" value="q10-wrong" id="situation6-4" class="radio-custom">
+						<label for="situation6-4" class="radio-custom-label">Lui suggérer de s'allonger.</label>
+					</div>
+
+				<input type="submit" value="Envoyer" id="submit-btn">
+			</form>
+			
+			<div class="hr"></div>
+		</article>
+		<footer>
+			<div class="links-container">
+				<div class="footer-lien1">
+					<h4>Les cours</h4>
+					<ul>
+						<li><a href="la_conduite_a_tenir.html">La conduite à tenir</a></li>
+						<li><a href="nourrisson.html">Pour nourrissons</a></li>
+					</ul>
+					<ul>
+						<li><a href="enfant.html">Pour enfants</a></li>
+						<li><a href="secourir.html">Pour adultes</a></li>
+					</ul>
+				</div>
+	
+				<div class="footer-lien2">
+					<h4>Les liens</h4>
+					<ul>
+						<li><a href="http://www.inrs.fr/" target="_blank">INRS</a></li>
+						<li><a href="https://dgboost.fr/" target="_blank">dgboost</a></li>
+					</ul>
+					<ul>
+						<li><a href="https://www.youtube.com/playlist?list=PLqQceE2KkkkdCIDIxMzJHvP20kfsnieQZ" target="_blank">Youtube Doctissimo</a></li>
+						<li><a href="http://www.7formation.com/" target="_blank">7formation</a></li>
+					</ul>
+				</div>
+				<div class="footer-lien3">
+					<h4>Contact</h4>
+					<div class="email">
+						<p>Email :</p>
+						<a href="mailto:david-sst@hotmail.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+					</div>
+					<div class="linkedin">
+						<p>Linkedin :</p>
+						<a href="https://www.linkedin.com/in/david-bourrel/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+					</div>
+					<div class="github">
+						<p>GitHub :</p>
+						<a href="https://github.com/davidbourrel" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="legal">
+				<p>Les informations disponibles ici ne remplacent en aucun cas une formation SST dans un organisme habilité.</p>
+				<p>© 2020 David Bourrel</p>
+			</div>
+		</footer>
+	</body>
+</html>
