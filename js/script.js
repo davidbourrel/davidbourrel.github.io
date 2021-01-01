@@ -79,10 +79,10 @@ const callbackLEFT = function(entries, observer) {
 		};
 	});
 };
-const callbackTOP = function(entries, observer) {
+const callbackBOTTOM = function(entries, observer) {
 	entries.forEach(function(entry) {
 		if(entry.intersectionRatio > threshold) {
-			entry.target.classList.add("reveal-show-top");
+			entry.target.classList.add("reveal-show-bottom");
 			observer.unobserve(entry.target);
 		};
 	});
@@ -92,9 +92,9 @@ const observerLEFT = new IntersectionObserver(callbackLEFT, options);
 document.querySelectorAll(".reveal-left").forEach(function(elements){ 
 	observerLEFT.observe(elements);
 });
-const observerTOP = new IntersectionObserver(callbackTOP, options);
-document.querySelectorAll(".reveal-top").forEach(function(elements){ 
-	observerTOP.observe(elements);
+const observerBOTTOM = new IntersectionObserver(callbackBOTTOM, options);
+document.querySelectorAll(".reveal-bottom").forEach(function(elements){ 
+	observerBOTTOM.observe(elements);
 });
 
 
