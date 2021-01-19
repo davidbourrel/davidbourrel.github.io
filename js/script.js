@@ -1,3 +1,4 @@
+"use strict";
 /* /////////// CLICK BUTTONS \\\\\\\\\\\ */
 
 const hamburger = document.getElementById("hamburger");
@@ -134,15 +135,15 @@ form.addEventListener("submit", function (e) {
 	});
   
 	let radioCustoms = document.querySelectorAll(".radio-custom");
+	let radioCustomLabel = document.querySelectorAll(".radio-custom-label");
 	radioCustoms.forEach((radioCustom, index) => {
-		let radioCustomLabel = document.querySelectorAll(".radio-custom-label");
 		if (radioCustom.value.includes("right")){
 			radioCustomLabel[index].style.cssText ="color:#046b26; font-weight: bold;";
 		};
 	});
 
 	let submitButton = document.querySelector("#submit-btn");
-	submitButton.remove();
+	submitButton.style.cssText ="display: none";
 	radioCustoms.forEach((radioCustom) => {
         radioCustom.disabled = true;
 	});
@@ -177,12 +178,26 @@ form.addEventListener("submit", function (e) {
 		quizComment.textContent = ("Parfait ! Tu as fais aucune faute !");
 	};
 
+
+	/* /////////////// QUIZ RESET \\\\\\\\\\\\\\\ */
 	let resetButton = document.getElementById("resetButton");
 	resetButton.addEventListener("click", function() {
+		userAnswers.forEach((answer, index) => {
+			score = 0;
+			checks[index].classList.remove("show");
+			crosses[index].classList.remove("show");
+		});
+		radioCustoms.forEach((radioCustom, index) => {
+			if (radioCustom.value.includes("right")){
+				radioCustomLabel[index].style.cssText ="color: rgba(20, 20, 20, 0.801); font-weight: inherit;";
+			};
+		});
+		submitButton.style.cssText ="display: inline";
 		radioCustoms.forEach((radioCustom) => {
+			radioCustom.disabled = false;
 			radioCustom.checked = false;
 		});
-		location.reload();
+		result.classList.add("d-none");
 	});
 });
 
