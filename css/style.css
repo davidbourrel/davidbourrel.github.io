@@ -21,6 +21,8 @@ html
 body
 {
 	background: var(--background, #f1f1e8);
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
 }
 p, label, li
 {
