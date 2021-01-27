@@ -734,7 +734,6 @@ input[type=submit]:hover, #resetButton:hover
 {
 	background-color: var(--colorhover, rgb(0, 172, 0));
 }
-
 .container-form 
 {
 	display: flex;
@@ -1112,6 +1111,10 @@ footer .github a
 	#quiz .radio-custom-label:hover
 	{
 		color: var(--primary);
+	}
+	input[type=submit]:active, #resetButton:active
+	{
+		transform: scale(0.95);
 	}
 	.upButton
 	{
