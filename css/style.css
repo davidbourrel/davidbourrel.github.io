@@ -21,6 +21,7 @@ html
 body
 {
 	background: var(--background, #f1f1e8);
+	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 }
@@ -241,6 +242,8 @@ article
 	background-color: #fff;
 	box-shadow: 0 0 5px rgba(165, 165, 165, 0.5);
 	margin: 1em auto;
+	max-width: 85%;
+	overflow-x: hidden;
 	padding: 1em;
 	text-align: justify;
 	width: 85%;
@@ -564,6 +567,7 @@ article figcaption
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	overflow: hidden;
 }
 .conteneur img{
 	margin: auto;
@@ -1139,25 +1143,25 @@ footer .github a
 	}
 }
 
-.reveal-left
+.reveal-first-effect
 {
     opacity: 0;
-    transform: translateX(-160px);
+	transform: translateX(-160px);
 }
-.reveal-bottom
+.reveal-second-effect
 {
     opacity: 0;
-    transform: translateY(60px);
+	transform: translateX(160px);
 }
-.reveal-show-bottom
+.reveal-show-second-effect
 {
     opacity: 1;
     transform: translateY(0);
-    transition: 0.5s cubic-bezier(.5, 0, 0, 1);
+	transition: 0.5s cubic-bezier(.5, 0, 0, 1);
 }
-.reveal-show-left
+.reveal-show-first-effect
 {
     opacity: 1;
     transform: translateY(0);
-    transition: 0.5s cubic-bezier(.5, 0, 0, 1);
+	transition: 0.5s cubic-bezier(.5, 0, 0, 1);
 }

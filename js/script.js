@@ -76,7 +76,7 @@ const MyAPP = function(){
 	const callbackLEFT = function(entries, observer) {
 		entries.forEach(function(entry) {
 			if(entry.intersectionRatio > threshold) {
-				entry.target.classList.add("reveal-show-left");
+				entry.target.classList.add("reveal-show-first-effect");
 				observer.unobserve(entry.target);
 			};
 		});
@@ -84,18 +84,18 @@ const MyAPP = function(){
 	const callbackBOTTOM = function(entries, observer) {
 		entries.forEach(function(entry) {
 			if(entry.intersectionRatio > threshold) {
-				entry.target.classList.add("reveal-show-bottom");
+				entry.target.classList.add("reveal-show-second-effect");
 				observer.unobserve(entry.target);
 			};
 		});
 	};
 
 	const observerLEFT = new IntersectionObserver(callbackLEFT, options);
-	document.querySelectorAll(".reveal-left").forEach(function(elements){ 
+	document.querySelectorAll(".reveal-first-effect").forEach(function(elements){ 
 		observerLEFT.observe(elements);
 	});
 	const observerBOTTOM = new IntersectionObserver(callbackBOTTOM, options);
-	document.querySelectorAll(".reveal-bottom").forEach(function(elements){ 
+	document.querySelectorAll(".reveal-second-effect").forEach(function(elements){ 
 		observerBOTTOM.observe(elements);
 	});
 
