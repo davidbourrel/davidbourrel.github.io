@@ -1147,18 +1147,18 @@ footer .github a
     opacity: 0;
 	transform: translateX(-160px);
 }
+.reveal-show-first-effect
+{
+    opacity: 1;
+    transform: translateY(0);
+	transition: 0.5s cubic-bezier(.5, 0, 0, 1);
+}
 .reveal-second-effect
 {
     opacity: 0;
 	transform: translateX(160px);
 }
 .reveal-show-second-effect
-{
-    opacity: 1;
-    transform: translateY(0);
-	transition: 0.5s cubic-bezier(.5, 0, 0, 1);
-}
-.reveal-show-first-effect
 {
     opacity: 1;
     transform: translateY(0);
