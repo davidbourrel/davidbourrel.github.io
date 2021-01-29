@@ -567,7 +567,6 @@ article figcaption
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	overflow: hidden;
 }
 .conteneur img{
 	margin: auto;
