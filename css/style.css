@@ -96,7 +96,7 @@ body > nav
 	height: 3px;
 	display: block;
 	position: absolute;
-	transform: translateY(-50%);
+	transform: translate3d(0, -50%, 0);
 	transition: all 200ms ease-in-out;
 	width: 35px;
 }
@@ -113,11 +113,11 @@ body > nav
 }
 .hamburger span::before
 {
-    transform: translateY(-10px);
+    transform: translate3d(0, -10px, 0);
 }
 .hamburger span::after
 {
-    transform: translateY(10px);
+    transform: translate3d(0, 10px, 0);
 }
 #hamburger.show span
 {
@@ -203,7 +203,7 @@ nav i, .dropdown li i
 }
 
 
-/* Titre */
+/* Titles */
 h2
 {
 	font-family: 'Open Sans', sans-serif;
@@ -230,11 +230,27 @@ h2
 }
 
 
-/*article*/
+/* ARTICLE */
 
 .sommaire-nav
 {
 	display: inline;
+}
+
+/* ON LOAD ANIMATION */
+
+@keyframes transitionIn
+{
+	from 
+	{
+		opacity: 0;
+		transform: translate3d(0, -5px, 0);
+	}
+	to
+	{
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
 article
 {
@@ -281,7 +297,6 @@ strong
 }
 .myScore
 {
-	/*border-bottom: 1px solid var(--primary, #046b26);*/
 	padding-bottom: 1px;
 }
 .nobold
@@ -572,7 +587,8 @@ article figcaption
 	margin: auto;
 	background-color: rgba(0, 0, 0, 0.356);
 }
-article a{
+article a
+{
 	color: var(--primary, #206a5d);
 }
 article ol li, article ul li
@@ -694,29 +710,6 @@ article address div
 {
 	color: var(--primary,#206a5d);
 	transform: scale(0.85);
-}
-input[type=text],input[type=email], select, textarea
-{
-	font-size: 0.75rem;
-	padding: 12px;
-	margin: 10px 0;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	outline: none;
-	width: 100%;
-}
-textarea
-{
-	max-width: 100%;
-	resize: vertical;
-	min-height: 150px;
-	min-width: 100%;
-}
-input[type=text]:focus, textarea:focus, input[type=email]:focus
-{
-	border-color: transparent;
-	box-shadow: 0 0 6px var(--primary,#206a5d);
 }
 input[type=submit], #resetButton
 {
@@ -935,7 +928,7 @@ footer .github a
 
 
 
-/* Media Queries for tablet */
+/* Media Query for Tablet */
 
 
 
@@ -948,7 +941,7 @@ footer .github a
 	}
 }
 
- /* Media Querie for Desktop */
+ /* Media Query for Desktop */
 
 
 @media all and (min-width: 950px)
@@ -1039,7 +1032,7 @@ footer .github a
 		color: var(--secondary);
 	}
 
-	/* Titre */
+	/* Titles */
 	h2
 	{
 		display: block;
@@ -1051,7 +1044,7 @@ footer .github a
 		width: 64%;
 	}
 	
-	/*article*/
+	/* ARTICLE */
 	
 	.sommaire-nav a
 	{
@@ -1126,41 +1119,29 @@ footer .github a
 	
 }
 
-/* ANIMATION ON LOAD */
 
-@keyframes transitionIn
-{
-	from 
-	{
-		opacity: 0;
-		transform: translateY(-5px);
-	}
-	to
-	{
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
+/* INTERSECTION OBSERVER ANIMATION */ 
+
 
 .reveal-first-effect
 {
     opacity: 0;
-	transform: translateX(-160px);
+	transform: translate3d(-160px, 0, 0);
 }
 .reveal-show-first-effect
 {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
 	transition: 0.5s cubic-bezier(.5, 0, 0, 1);
 }
 .reveal-second-effect
 {
     opacity: 0;
-	transform: translateX(160px);
+	transform: translate3d(160px, 0, 0);
 }
 .reveal-show-second-effect
 {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
 	transition: 0.5s cubic-bezier(.5, 0, 0, 1);
 }

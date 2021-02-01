@@ -1,6 +1,6 @@
 const MyAPP = function(){
 	"use strict";
-	/* /////////// CLICK BUTTONS \\\\\\\\\\\ */
+	/* /////////// CLICK MENU BUTTONS \\\\\\\\\\\ */
 
 	const hamburger = document.getElementById("hamburger");
 	const navUL = document.getElementById("nav-ul");
