@@ -224,8 +224,8 @@ h2
 .titre p
 {
 	align-self: flex-end;
+	color: rgb(87, 87, 87);
 	font-size: 0.7rem;
-	color: rgba(0, 0, 0, 0.507);
 	margin:0 1em;
 }
 
@@ -568,7 +568,7 @@ article figcaption
 	padding-top: 70%;
 	box-shadow: 0 0 10px rgb(201, 201, 201);
 	background-color: #EDEDED;
-	background: url(../images/pictogrammes/prefas.png);
+	background: url(../images/pictogrammes/prefas.webp);
 	background-size: contain;
 	margin: auto;
 }
@@ -958,7 +958,9 @@ footer .github a
 	{
 		display: initial;
 		cursor: pointer;
+		height: auto;
 		padding-top: 10px;
+		width: 89px;
 	}
 
 	/*NAVIGATION*/
