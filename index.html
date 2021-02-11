@@ -1,127 +1,266 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Guide du sauveteur secouriste du travail (SST), pour apprendre les bases du secourisme en passant par la méthode prefas (protéger, examiner, faire alerter, secourir).">
-		<meta name="keywords" content="sst, massage cardiaque, sauveteur secouriste du travail, secourisme, cours, formation, pls, quiz, prefas, guide, premier secours">
-		<meta name="robots" content="index, follow">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="webfonts-css/all.css">
-  		<link rel="stylesheet" href="css/style.css">
-  		<link rel="icon" type="image/x-icon" href="images/logo-sst.png">
-  		<script src="js/script.js" async></script>
-		<title>Guide SST - Accueil</title>
-	</head>
-	<body>
-		<header>
-			<a href="index.html"><img src="images/logo-sst.png" alt="Logo SST"></a>
-			<div>
-			<h1>Guide du <br> Sauveteur Secouriste du Travail</h1>
-			</div>
-		</header>
-		<nav>
-			<button class="hamburger" id="hamburger" aria-label="menu button">
-				<span></span>
-			</button>
-				<ul id="nav-ul">
-					<li><a href="index.html"><i class="fas fa-home"></i>Accueil</a></li>
-					<li><a href="#" class="deroulant" id="deroulant"><i class="fas fa-book"></i>Prefas<i class="fas fa-chevron-down"></i></a>
-						<ul class="dropdown" id="dropdown-1">
-							<li><a href="pages/la_conduite_a_tenir.html"><i class="fas fa-book-reader"></i>La conduite à tenir</a></li>
-							<li><a href="pages/proteger.html"><i class="fas fa-shield-alt"></i>Protéger</a></li>
-							<li><a href="pages/examiner.html"><i class="fas fa-diagnoses"></i>Examiner</a></li>
-							<li><a href="pages/alerter.html"><i class="fas fa-bell"></i>Alerter</a></li>
-							<li><a href="pages/secourir.html"><i class="fas fa-first-aid"></i>Secourir</a></li>
-						</ul>
-					</li>
-					<li><a href="#" class="deroulant" id="deroulant-2"><i class="far fa-hand-paper"></i>Gestes à faire sur<i class="fas fa-chevron-down"></i></a>
-						<ul class="dropdown" id="dropdown-2">
-							<li><a href="pages/nourrisson.html"><i class="fas fa-baby"></i>Un nourrisson <span class="italic lowercase"> (0 à 1 an)</span></a></li>
-							<li><a href="pages/enfant.html"><i class="fas fa-child"></i>Un enfant <span class="italic lowercase">(1 à 8 ans)</span></a></li>
-							<li><a href="pages/secourir.html"><i class="fas fa-user"></i>Un adulte <span class="italic lowercase">(plus de 8 ans)</span></a></li>
-						</ul>
-					</li>
-					<li><a href="pages/quiz.html"><i class="fas fa-th-list"></i>Quiz</a></li>
-					<li><a href="pages/contact.html"><i class="fas fa-address-book"></i>En savoir plus</a></li>
-				</ul>
-		</nav>
-		
-		<div class="titre">
-			<h2>Accueil <br> du guide SST</h2>
-			<p>dernière mise à jour le 13/11/2020</p>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Guide du sauveteur secouriste du travail (SST), pour apprendre les bases du secourisme en passant par la méthode prefas (protéger, examiner, faire alerter, secourir)."
+    />
+    <meta
+      name="keywords"
+      content="sst, massage cardiaque, sauveteur secouriste du travail, secourisme, cours, formation, pls, quiz, prefas, guide, premier secours"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="webfonts-css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo-sst.png" />
+    <script src="js/script.js" async></script>
+    <title>Guide SST - Accueil</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="images/logo-sst.png" alt="Logo SST" /></a>
+      <div>
+        <h1>
+          Guide du <br />
+          Sauveteur Secouriste du Travail
+        </h1>
+      </div>
+    </header>
+    <nav>
+      <button class="hamburger" id="hamburger" aria-label="menu button">
+        <span></span>
+      </button>
+      <ul id="nav-ul">
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i>Accueil</a>
+        </li>
+        <li>
+          <a href="#" class="deroulant" id="deroulant"
+            ><i class="fas fa-book"></i>Prefas<i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="dropdown" id="dropdown-1">
+            <li>
+              <a href="pages/la_conduite_a_tenir.html"
+                ><i class="fas fa-book-reader"></i>La conduite à tenir</a
+              >
+            </li>
+            <li>
+              <a href="pages/proteger.html"
+                ><i class="fas fa-shield-alt"></i>Protéger</a
+              >
+            </li>
+            <li>
+              <a href="pages/examiner.html"
+                ><i class="fas fa-diagnoses"></i>Examiner</a
+              >
+            </li>
+            <li>
+              <a href="pages/alerter.html"
+                ><i class="fas fa-bell"></i>Alerter</a
+              >
+            </li>
+            <li>
+              <a href="pages/secourir.html"
+                ><i class="fas fa-first-aid"></i>Secourir</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="deroulant" id="deroulant-2"
+            ><i class="far fa-hand-paper"></i>Gestes à faire sur<i
+              class="fas fa-chevron-down"
+            ></i
+          ></a>
+          <ul class="dropdown" id="dropdown-2">
+            <li>
+              <a href="pages/nourrisson.html"
+                ><i class="fas fa-baby"></i>Un nourrisson
+                <span class="italic lowercase"> (0 à 1 an)</span></a
+              >
+            </li>
+            <li>
+              <a href="pages/enfant.html"
+                ><i class="fas fa-child"></i>Un enfant
+                <span class="italic lowercase">(1 à 8 ans)</span></a
+              >
+            </li>
+            <li>
+              <a href="pages/secourir.html"
+                ><i class="fas fa-user"></i>Un adulte
+                <span class="italic lowercase">(plus de 8 ans)</span></a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="pages/quiz.html"><i class="fas fa-th-list"></i>Quiz</a>
+        </li>
+        <li>
+          <a href="pages/contact.html"
+            ><i class="fas fa-address-book"></i>En savoir plus</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-		<article>
-			<h3>Sauveteur secouriste du travail (SST)</h3>
-			<div class="hr2"></div>
+    <div class="titre">
+      <h2>
+        Accueil <br />
+        du guide SST
+      </h2>
+      <p>dernière mise à jour le 13/11/2020</p>
+    </div>
 
-			<p>Nous allons apprendre ensemble comment bien réagir face à une situation d'accident.</p>
-			<p>Malaise, étouffement, brûlure, saignement abondant... Certaines situations peuvent être parfois difficiles à maîtriser. Comment réagir ? Quels sont les gestes à connaître ? Comment éviter un suraccident ? Quels sont les numéros d'urgence ? etc. </p>
+    <article>
+      <h3>Sauveteur secouriste du travail (SST)</h3>
+      <div class="hr2"></div>
 
-			<h4>Commençons déjà par : qu'est-ce qu'un SST ? </h4>
-			<p><strong class="nobold">Le SST </strong><span class="italic">(Sauveteur Secouriste du Travail)</span> est un salarié d'une entreprise. Son rôle est de porter les premiers secours à toute victime d'un accident du travail ou d'un malaise, mais aussi d'être acteur de la prévention dans son entreprise. Vous serez capable de repérer les dangers dans une situation de travail et de le supprimer. </p>
+      <p>
+        Nous allons apprendre ensemble comment bien réagir face à une situation
+        d'accident.
+      </p>
+      <p>
+        Malaise, étouffement, brûlure, saignement abondant... Certaines
+        situations peuvent être parfois difficiles à maîtriser. Comment réagir ?
+        Quels sont les gestes à connaître ? Comment éviter un suraccident ?
+        Quels sont les numéros d'urgence ? etc.
+      </p>
 
-			<p>Vous pouvez vous aussi devenir SST grâce à des formations dans des organismes agréés. Ici, nous allons voir ensemble certaines notions en secourisme seulement. Cela peut être utile que ce soit en entreprise ou dans la vie quotidienne ! Cependant, les méthodes changent régulièrement, c'est pourquoi un SST doit maintenir et actualiser ses compétences tous les 2 ans <span class="italic">(24 mois de date à date)</span>.</p>
+      <h4>Commençons déjà par : qu'est-ce qu'un SST ?</h4>
+      <p>
+        <strong class="nobold">Le SST </strong
+        ><span class="italic">(Sauveteur Secouriste du Travail)</span> est un
+        salarié d'une entreprise. Son rôle est de porter les premiers secours à
+        toute victime d'un accident du travail ou d'un malaise, mais aussi
+        d'être acteur de la prévention dans son entreprise. Vous serez capable
+        de repérer les dangers dans une situation de travail et de le supprimer.
+      </p>
 
-			<div class="conteneur reveal-first-effect">
-				<div id="prevention-sst"></div>
-			</div>
+      <p>
+        Vous pouvez vous aussi devenir SST grâce à des formations dans des
+        organismes agréés. Ici, nous allons voir ensemble certaines notions en
+        secourisme seulement. Cela peut être utile que ce soit en entreprise ou
+        dans la vie quotidienne ! Cependant, les méthodes changent
+        régulièrement, c'est pourquoi un SST doit maintenir et actualiser ses
+        compétences tous les 2 ans
+        <span class="italic">(24 mois de date à date)</span>.
+      </p>
 
-			<p>Je vais essayer de rentrer dans les détails tout en restant le plus clair possible. Il y a beaucoup de choses à voir, c'est pourquoi j'ai créé plusieurs catégories <span class="italic">(nourrisson, enfant et adulte)</span>. Les méthodes ne sont pas les mêmes, que ce soit pour un adulte ou pour un nourrisson. Nous verrons cela ensemble dans les prochaines pages.</p>
-			<p></p>
-			
-			<p>Intéressons-nous maintenant à savoir quelle conduite à tenir face à une situation d'accident et qu'est-ce qu'un <a href="pages/la_conduite_a_tenir.html">plan d'intervention</a>.</p>
-			
-			<div class="hr"></div>
-		</article>
-		<footer>
-			<div class="links-container">
-				<div class="footer-lien1">
-					<h4>Les cours</h4>
-					<ul>
-						<li><a href="pages/la_conduite_a_tenir.html">La conduite à tenir</a></li>
-						<li><a href="pages/nourrisson.html">Pour nourrissons</a></li>
-					</ul>
-					<ul>
-						<li><a href="pages/enfant.html">Pour enfants</a></li>
-						<li><a href="pages/secourir.html">Pour adultes</a></li>
-					</ul>
-				</div>
-	
-				<div class="footer-lien2">
-					<h4>Les liens</h4>
-					<ul>
-						<li><a href="http://www.inrs.fr/" target="_blank" rel="noreferrer">INRS</a></li>
-						<li><a href="https://dgboost.fr/" target="_blank" rel="noreferrer">dgboost</a></li>
-					</ul>
-					<ul>
-						<li><a href="https://www.youtube.com/playlist?list=PLqQceE2KkkkdCIDIxMzJHvP20kfsnieQZ" target="_blank" rel="noreferrer">Youtube Doctissimo</a></li>
-						<li><a href="http://www.7formation.com/" target="_blank" rel="noreferrer">7formation</a></li>
-					</ul>
-				</div>
-				
-				<div class="footer-lien3">
-					<h4>Contact</h4>
-					<div class="email">
-						<p>Email :</p>
-						<a href="mailto:david-sst@hotmail.com" target="_blank" rel="noreferrer"><i class="far fa-envelope fa-2x"></i></a>
-					</div>
-					<div class="linkedin">
-						<p>Linkedin :</p>
-						<a href="https://www.linkedin.com/in/david-bourrel/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
-					</div>
-					<div class="github">
-						<p>GitHub :</p>
-						<a href="https://github.com/davidbourrel" target="_blank" rel="noreferrer"><i class="fab fa-github fa-2x"></i></a>
-					</div>
-				</div>
-			</div>
-			
-			<div class="legal">
-				<p>Les informations disponibles ici ne remplacent en aucun cas une formation SST dans un organisme habilité.</p>
-				<p>© 2021 David Bourrel</p>
-			</div>
-		</footer>
-	</body>
+      <div class="conteneur reveal-first-effect">
+        <div id="prevention-sst"></div>
+      </div>
+
+      <p>
+        Je vais essayer de rentrer dans les détails tout en restant le plus
+        clair possible. Il y a beaucoup de choses à voir, c'est pourquoi j'ai
+        créé plusieurs catégories
+        <span class="italic">(nourrisson, enfant et adulte)</span>. Les méthodes
+        ne sont pas les mêmes, que ce soit pour un adulte ou pour un nourrisson.
+        Nous verrons cela ensemble dans les prochaines pages.
+      </p>
+      <p></p>
+
+      <p>
+        Intéressons-nous maintenant à savoir quelle conduite à tenir face à une
+        situation d'accident et qu'est-ce qu'un
+        <a href="pages/la_conduite_a_tenir.html">plan d'intervention</a>.
+      </p>
+
+      <div class="hr"></div>
+    </article>
+    <footer>
+      <div class="links-container">
+        <div class="footer-lien1">
+          <h4>Les cours</h4>
+          <ul>
+            <li>
+              <a href="pages/la_conduite_a_tenir.html">La conduite à tenir</a>
+            </li>
+            <li><a href="pages/nourrisson.html">Pour nourrissons</a></li>
+          </ul>
+          <ul>
+            <li><a href="pages/enfant.html">Pour enfants</a></li>
+            <li><a href="pages/secourir.html">Pour adultes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-lien2">
+          <h4>Les liens</h4>
+          <ul>
+            <li>
+              <a href="http://www.inrs.fr/" target="_blank" rel="noreferrer"
+                >INRS</a
+              >
+            </li>
+            <li>
+              <a href="https://dgboost.fr/" target="_blank" rel="noreferrer"
+                >dgboost</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a
+                href="https://www.youtube.com/playlist?list=PLqQceE2KkkkdCIDIxMzJHvP20kfsnieQZ"
+                target="_blank"
+                rel="noreferrer"
+                >Youtube Doctissimo</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.7formation.com/"
+                target="_blank"
+                rel="noreferrer"
+                >7formation</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-lien3">
+          <h4>Contact</h4>
+          <div class="email">
+            <p>Email :</p>
+            <a
+              href="mailto:david-sst@hotmail.com"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="far fa-envelope fa-2x"></i
+            ></a>
+          </div>
+          <div class="linkedin">
+            <p>Linkedin :</p>
+            <a
+              href="https://www.linkedin.com/in/david-bourrel/"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+          </div>
+          <div class="github">
+            <p>GitHub :</p>
+            <a
+              href="https://github.com/davidbourrel"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="legal">
+        <p>
+          Les informations disponibles ici ne remplacent en aucun cas une
+          formation SST dans un organisme habilité.
+        </p>
+        <p>© 2021 David Bourrel</p>
+      </div>
+    </footer>
+  </body>
 </html>
