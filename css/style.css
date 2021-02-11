@@ -857,7 +857,7 @@ footer .github a {
   header img {
     display: initial;
     cursor: pointer;
-    height: auto;
+    height: 89px;
     padding-top: 10px;
     width: 89px;
   }
