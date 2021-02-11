@@ -1,178 +1,368 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Guide du sauveteur secouriste du travail (SST), pour apprendre les bases du secourisme en passant par la méthode prefas (protéger, examiner, faire alerter, secourir).">
-		<meta name="keywords" content="sst, massage cardiaque, sauveteur secouriste du travail, secourisme, cours, formation, pls, quiz, prefas, guide, premier secours">
-		<meta name="robots" content="index, follow">
-		<link rel="stylesheet" href="../css/reset.css">
-		<link rel="stylesheet" href="../webfonts-css/all.css">
-  		<link rel="stylesheet" href="../css/style.css">
-  		<link rel="icon" type="image/x-icon" href="../images/logo-sst.png">
-  		<script src="../js/script.js" async></script>
-		<title>Guide SST - Protéger</title>
-	</head>
-	<body>
-		<div class="banner-img"></div>
-		<header>
-			<a href="../index.html"><img src="../images/logo-sst.png" alt="Logo SST"></a>
-			<div>
-			<h1>Guide du <br> Sauveteur Secouriste du Travail</h1>
-			</div>
-		</header>
-		<nav>
-			<button class="hamburger" id="hamburger" aria-label="menu button">
-				<span></span>
-			</button>
-				<ul id="nav-ul">
-					<li><a href="../index.html"><i class="fas fa-home"></i>Accueil</a></li>
-					<li><a href="#" class="deroulant" id="deroulant"><i class="fas fa-book"></i>Prefas<i class="fas fa-chevron-down"></i></a>
-						<ul class="dropdown" id="dropdown-1">
-							<li><a href="la_conduite_a_tenir.html"><i class="fas fa-book-reader"></i>La conduite à tenir</a></li>
-							<li><a href="proteger.html"><i class="fas fa-shield-alt"></i>Protéger</a></li>
-							<li><a href="examiner.html"><i class="fas fa-diagnoses"></i>Examiner</a></li>
-							<li><a href="alerter.html"><i class="fas fa-bell"></i>Alerter</a></li>
-							<li><a href="secourir.html"><i class="fas fa-first-aid"></i>Secourir</a></li>
-						</ul>
-					</li>
-					<li><a href="#" class="deroulant" id="deroulant-2"><i class="far fa-hand-paper"></i>Gestes à faire sur<i class="fas fa-chevron-down"></i></a>
-						<ul class="dropdown" id="dropdown-2">
-							<li><a href="nourrisson.html"><i class="fas fa-baby"></i>Un nourrisson <span class="italic lowercase"> (0 à 1 an)</span></a></li>
-							<li><a href="enfant.html"><i class="fas fa-child"></i>Un enfant <span class="italic lowercase">(1 à 8 ans)</span></a></li>
-							<li><a href="secourir.html"><i class="fas fa-user"></i>Un adulte <span class="italic lowercase">(plus de 8 ans)</span></a></li>
-						</ul>
-					</li>
-					<li><a href="quiz.html"><i class="fas fa-th-list"></i>Quiz</a></li>
-					<li><a href="contact.html"><i class="fas fa-address-book"></i>En savoir plus</a></li>
-				</ul>
-		</nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Guide du sauveteur secouriste du travail (SST), pour apprendre les bases du secourisme en passant par la méthode prefas (protéger, examiner, faire alerter, secourir)."
+    />
+    <meta
+      name="keywords"
+      content="sst, massage cardiaque, sauveteur secouriste du travail, secourisme, cours, formation, pls, quiz, prefas, guide, premier secours"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../webfonts-css/all.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo-sst.png" />
+    <script src="../js/script.js" async></script>
+    <title>Guide SST - Protéger</title>
+  </head>
+  <body>
+    <div class="banner-img"></div>
+    <header>
+      <a href="../index.html"
+        ><img src="../images/logo-sst.png" alt="Logo SST"
+      /></a>
+      <div>
+        <h1>
+          Guide du <br />
+          Sauveteur Secouriste du Travail
+        </h1>
+      </div>
+    </header>
+    <nav>
+      <button class="hamburger" id="hamburger" aria-label="menu button">
+        <span></span>
+      </button>
+      <ul id="nav-ul">
+        <li>
+          <a href="../index.html"><i class="fas fa-home"></i>Accueil</a>
+        </li>
+        <li>
+          <a href="#" class="deroulant" id="deroulant"
+            ><i class="fas fa-book"></i>Prefas<i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="dropdown" id="dropdown-1">
+            <li>
+              <a href="la_conduite_a_tenir.html"
+                ><i class="fas fa-book-reader"></i>La conduite à tenir</a
+              >
+            </li>
+            <li>
+              <a href="proteger.html"
+                ><i class="fas fa-shield-alt"></i>Protéger</a
+              >
+            </li>
+            <li>
+              <a href="examiner.html"
+                ><i class="fas fa-diagnoses"></i>Examiner</a
+              >
+            </li>
+            <li>
+              <a href="alerter.html"><i class="fas fa-bell"></i>Alerter</a>
+            </li>
+            <li>
+              <a href="secourir.html"
+                ><i class="fas fa-first-aid"></i>Secourir</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="deroulant" id="deroulant-2"
+            ><i class="far fa-hand-paper"></i>Gestes à faire sur<i
+              class="fas fa-chevron-down"
+            ></i
+          ></a>
+          <ul class="dropdown" id="dropdown-2">
+            <li>
+              <a href="nourrisson.html"
+                ><i class="fas fa-baby"></i>Un nourrisson
+                <span class="italic lowercase"> (0 à 1 an)</span></a
+              >
+            </li>
+            <li>
+              <a href="enfant.html"
+                ><i class="fas fa-child"></i>Un enfant
+                <span class="italic lowercase">(1 à 8 ans)</span></a
+              >
+            </li>
+            <li>
+              <a href="secourir.html"
+                ><i class="fas fa-user"></i>Un adulte
+                <span class="italic lowercase">(plus de 8 ans)</span></a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="quiz.html"><i class="fas fa-th-list"></i>Quiz</a>
+        </li>
+        <li>
+          <a href="contact.html"
+            ><i class="fas fa-address-book"></i>En savoir plus</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-		<div class="titre">
-		<h2>Protéger</h2>
-		<p>dernière mise à jour le 13/11/2020</p>
-		</div>
+    <div class="titre">
+      <h2>Protéger</h2>
+      <p>dernière mise à jour le 13/11/2020</p>
+    </div>
 
-		<article>
+    <article>
+      <h3>La phase d'analyse</h3>
+      <div class="hr2"></div>
 
-			<h3>La phase d'analyse</h3>
-			<div class="hr2"></div>
+      <p>
+        Avant d'accéder à la victime, le SST doit, en effectuant une approche
+        prudente de la zone d'intervention, se poser les questions suivantes :
+      </p>
 
-			<p>Avant d'accéder à la victime, le SST doit, en effectuant une approche prudente de la zone d'intervention, se poser les questions suivantes :</p>
+      <div class="conteneur reveal-first-effect">
+        <div id="protection-sst"></div>
+      </div>
 
-			<div class="conteneur reveal-first-effect">
-				<div id="protection-sst"></div>
-			</div>
+      <h4>Que s'est-il passé ?</h4>
+      <p class="width90">
+        Déterminer la nature de l'accident (interroger les témoins, la victime
+        si elle est en état de répondre ou rechercher les éléments matériels
+        significatifs).
+      </p>
 
-			<h4>Que s'est-il passé ?</h4> 
-			<p class="width90">Déterminer la nature de l'accident (interroger les témoins, la victime si elle est en état de répondre ou rechercher les éléments matériels significatifs).</p>
+      <h4>Persiste-t-il un/des danger(s) ?</h4>
+      <p class="width90">
+        Le
+        <strong class="nobold">sauveteur secouriste du travail (SST)</strong>
+        doit être capable de reconnaître, sans s'exposer lui-même, les dangers
+        persistants pour la victime de l'accident et les autres personnes
+        exposées.
+      </p>
 
-			<h4>Persiste-t-il un/des danger(s) ?</h4>
-			<p class="width90">Le <strong class="nobold">sauveteur secouriste du travail (SST)</strong> doit être capable de reconnaître, sans s'exposer lui-même, les dangers persistants pour la victime de l'accident et les autres personnes exposées.</p>
+      <h4>Identifier les dangers persistants</h4>
+      <p class="width90">
+        Les dangers peuvent être d'origine mécanique, électrique, thermique ou
+        même due à une atmosphère toxique ou irrespirable pouvant provoquer une
+        intoxication, une asphyxie...
+      </p>
 
-			<h4>Identifier les dangers persistants</h4>
-			<p class="width90">Les dangers peuvent être d'origine mécanique, électrique, thermique ou même due à une atmosphère toxique ou irrespirable pouvant provoquer une intoxication, une asphyxie...</p>
+      <div class="conteneur reveal-second-effect">
+        <figure>
+          <img
+            src="../images/pictogrammes/mecanique.png"
+            alt="image danger mécanique"
+            width="120"
+            height="120"
+          />
+          <figcaption>Mécanique</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="../images/pictogrammes/electricite.png"
+            alt="image danger électrique"
+            width="120"
+            height="120"
+          />
+          <figcaption>Electrique</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="../images/pictogrammes/explosion.png"
+            alt="image danger thermique"
+            width="120"
+            height="120"
+          />
+          <figcaption>Thermique</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="../images/pictogrammes/atmosphere.png"
+            alt="image danger atmosphérique"
+            width="120"
+            height="120"
+          />
+          <figcaption>Atmosphérique</figcaption>
+        </figure>
+      </div>
 
-			<div class="conteneur reveal-second-effect">
-				<figure>
-					<img src="../images/pictogrammes/mecanique.png" alt="image danger mécanique" width="120" height="120"><figcaption>Mécanique</figcaption>
-				</figure>
-				<figure>
-					<img src="../images/pictogrammes/electricite.png" alt="image danger électrique" width="120" height="120"><figcaption>Electrique</figcaption>
-				</figure>
-				<figure>
-					<img src="../images/pictogrammes/explosion.png" alt="image danger thermique" width="120" height="120"><figcaption>Thermique</figcaption>
-				</figure>
-				<figure>
-					<img src="../images/pictogrammes/atmosphere.png" alt="image danger atmosphérique" width="120" height="120"><figcaption>Atmosphérique</figcaption>
-				</figure>
-			</div>
+      <div class="hr"></div>
 
-			<div class="hr"></div>
+      <h3>La phase d'action</h3>
+      <div class="hr2"></div>
 
-			<h3>La phase d'action</h3>
-			<div class="hr2"></div>
+      <p>
+        Cette phase doit permettre au SST de repérer un danger persistant,
+        d'intervenir sans risque. Pour cela, avant d'agir, il doit se poser les
+        questions suivantes :
+      </p>
 
-			<p>Cette phase doit permettre au SST de repérer un danger persistant, d'intervenir sans risque. Pour cela, avant d'agir, il doit se poser les questions suivantes : </p>
+      <h4>
+        Peut-on supprimer les dangers identifiés de façon permanente, sans
+        aggraver l'état de la victime et sans risque pour le SST ou pour les
+        tiers ?
+      </h4>
+      <p class="width90">Si oui : le faire ou le faire faire.</p>
+      <p class="width90">Si non,</p>
+      <h4>
+        Peut-on isoler les dangers de façon permanente et sans risque pour le
+        SST ou pour les tiers ?
+      </h4>
+      <p class="width90">Si oui : le faire ou le faire faire.</p>
+      <p class="width90">Si non,</p>
+      <h4>
+        Peut-on soustraire la victime aux dangers identifiés sans risque pour le
+        SST ou pour les tiers ?
+      </h4>
+      <p class="width90">
+        Si oui : le faire ou le faire faire (en se protégeant). Le dégagement
+        d'urgence est une manœuvre exceptionnelle, qui doit être utilisée
+        exclusivement pour soustraire une victime à un danger réel, immédiat et
+        non contrôlable, menaçant sa vie.
+      </p>
+      <p class="width90">Si non,</p>
+      <h4>
+        Continuer à isoler la zone dangereuse et faire alerter les secours
+        spécialisés qui pourront agir sur le danger.
+      </h4>
 
-			<h4>Peut-on supprimer les dangers identifiés de façon permanente, sans aggraver l'état de la victime et sans risque pour le SST ou pour les tiers ?</h4>
-			<p class="width90">Si oui : le faire ou le faire faire.</p>
-			<p class="width90">Si non, </p>
-			<h4>Peut-on isoler les dangers de façon permanente et sans risque pour le SST ou pour les tiers ?</h4>
-			<p class="width90">Si oui : le faire ou le faire faire.</p>
-			<p class="width90">Si non, </p>
-			<h4>Peut-on soustraire la victime aux dangers identifiés sans risque pour le SST ou pour les tiers ?</h4>
-			<p class="width90">Si oui : le faire ou le faire faire (en se protégeant). Le dégagement d'urgence est une manœuvre exceptionnelle, qui doit être utilisée exclusivement pour soustraire une victime à un danger réel, immédiat et non contrôlable, menaçant sa vie.</p>
-			<p class="width90">Si non, </p>
-			<h4>Continuer à isoler la zone dangereuse et faire alerter les secours spécialisés qui pourront agir sur le danger.</h4>
+      <div class="conteneur reveal-first-effect">
+        <figure>
+          <img
+            src="../images/pictogrammes/disjoncteur.png"
+            alt="image disjoncteur"
+            width="120"
+            height="120"
+          />
+          <figcaption>Supprimer le danger</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="../images/pictogrammes/borne.png"
+            alt="image borne"
+            width="120"
+            height="120"
+          />
+          <figcaption>Isoler la zone</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="../images/pictogrammes/extraction.png"
+            alt="image extraction"
+            width="120"
+            height="120"
+          />
+          <figcaption>Soustraire la victime</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="../images/pictogrammes/numeros.png"
+            alt="image numeros secours"
+            width="120"
+            height="120"
+          />
+          <figcaption>Alerter les secours</figcaption>
+        </figure>
+      </div>
 
-			<div class="conteneur reveal-first-effect">
-				<figure>
-					<img src="../images/pictogrammes/disjoncteur.png" alt="image disjoncteur" width="120" height="120"><figcaption>Supprimer le danger</figcaption>
-				</figure>
-				<figure>
-					<img src="../images/pictogrammes/borne.png" alt="image borne" 
-					width="120" height="120"><figcaption>Isoler la zone</figcaption>
-				</figure>
-				<figure>
-					<img src="../images/pictogrammes/extraction.png" alt="image extraction" 
-					width="120" height="120"><figcaption>Soustraire la victime</figcaption>
-				</figure>
-				<figure>
-					<img src="../images/pictogrammes/numeros.png" alt="image numeros secours" width="120" height="120"><figcaption>Alerter les secours</figcaption>
-				</figure>
-			</div>
-	
-			<p>Il n'y a plus aucun risque pour vous ou pour les autres ? Parfait ! Passons maintenant à l'étape suivante : <a href="examiner.html">l'examen de la victime !</a></p>
-			<div class="hr"></div>
-		</article>
-		<footer>
-			<div class="links-container">
-				<div class="footer-lien1">
-					<h4>Les cours</h4>
-					<ul>
-						<li><a href="pages/la_conduite_a_tenir.html">La conduite à tenir</a></li>
-						<li><a href="pages/nourrisson.html">Pour nourrissons</a></li>
-					</ul>
-					<ul>
-						<li><a href="pages/enfant.html">Pour enfants</a></li>
-						<li><a href="pages/secourir.html">Pour adultes</a></li>
-					</ul>
-				</div>
-	
-				<div class="footer-lien2">
-					<h4>Les liens</h4>
-					<ul>
-						<li><a href="http://www.inrs.fr/" target="_blank" rel="noreferrer">INRS</a></li>
-						<li><a href="https://dgboost.fr/" target="_blank" rel="noreferrer">dgboost</a></li>
-					</ul>
-					<ul>
-						<li><a href="https://www.youtube.com/playlist?list=PLqQceE2KkkkdCIDIxMzJHvP20kfsnieQZ" target="_blank" rel="noreferrer">Youtube Doctissimo</a></li>
-						<li><a href="http://www.7formation.com/" target="_blank" rel="noreferrer">7formation</a></li>
-					</ul>
-				</div>
-				
-				<div class="footer-lien3">
-					<h4>Contact</h4>
-					<div class="email">
-						<p>Email :</p>
-						<a href="mailto:david-sst@hotmail.com" target="_blank" rel="noreferrer"><i class="far fa-envelope fa-2x"></i></a>
-					</div>
-					<div class="linkedin">
-						<p>Linkedin :</p>
-						<a href="https://www.linkedin.com/in/david-bourrel/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
-					</div>
-					<div class="github">
-						<p>GitHub :</p>
-						<a href="https://github.com/davidbourrel" target="_blank" rel="noreferrer"><i class="fab fa-github fa-2x"></i></a>
-					</div>
-				</div>
-			</div>
-			
-			<div class="legal">
-				<p>Les informations disponibles ici ne remplacent en aucun cas une formation SST dans un organisme habilité.</p>
-				<p>© 2021 David Bourrel</p>
-			</div>
-		</footer>
-	</body>
+      <p>
+        Il n'y a plus aucun risque pour vous ou pour les autres ? Parfait !
+        Passons maintenant à l'étape suivante :
+        <a href="examiner.html">l'examen de la victime !</a>
+      </p>
+      <div class="hr"></div>
+    </article>
+    <footer>
+      <div class="links-container">
+        <div class="footer-lien1">
+          <h4>Les cours</h4>
+          <ul>
+            <li>
+              <a href="pages/la_conduite_a_tenir.html">La conduite à tenir</a>
+            </li>
+            <li><a href="pages/nourrisson.html">Pour nourrissons</a></li>
+          </ul>
+          <ul>
+            <li><a href="pages/enfant.html">Pour enfants</a></li>
+            <li><a href="pages/secourir.html">Pour adultes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-lien2">
+          <h4>Les liens</h4>
+          <ul>
+            <li>
+              <a href="http://www.inrs.fr/" target="_blank" rel="noreferrer"
+                >INRS</a
+              >
+            </li>
+            <li>
+              <a href="https://dgboost.fr/" target="_blank" rel="noreferrer"
+                >dgboost</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a
+                href="https://www.youtube.com/playlist?list=PLqQceE2KkkkdCIDIxMzJHvP20kfsnieQZ"
+                target="_blank"
+                rel="noreferrer"
+                >Youtube Doctissimo</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.7formation.com/"
+                target="_blank"
+                rel="noreferrer"
+                >7formation</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-lien3">
+          <h4>Contact</h4>
+          <div class="email">
+            <p>Email :</p>
+            <a
+              href="mailto:david-sst@hotmail.com"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="far fa-envelope fa-2x"></i
+            ></a>
+          </div>
+          <div class="linkedin">
+            <p>Linkedin :</p>
+            <a
+              href="https://www.linkedin.com/in/david-bourrel/"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+          </div>
+          <div class="github">
+            <p>GitHub :</p>
+            <a
+              href="https://github.com/davidbourrel"
+              target="_blank"
+              rel="noreferrer"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="legal">
+        <p>
+          Les informations disponibles ici ne remplacent en aucun cas une
+          formation SST dans un organisme habilité.
+        </p>
+        <p>© 2021 David Bourrel</p>
+      </div>
+    </footer>
+  </body>
 </html>
