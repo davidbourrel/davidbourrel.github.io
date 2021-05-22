@@ -21,6 +21,6 @@ Il est possible à la fin de tester vos connaissanes avec un quiz ! Il y a pour 
 
 Le site est entièrement responsive, n'hésitez pas à me contacter si vous rencontrez des problèmes ou si vous avez la moindre question !
 
-**Il est possible de décuvrir ma version juste ici ➡️** https://davidbourrel.github.io/
+**Il est possible de le découvrir juste ici ➡️** https://davidbourrel.github.io/
 
 Made by David Bourrel
