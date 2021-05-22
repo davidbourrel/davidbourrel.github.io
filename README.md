@@ -8,7 +8,7 @@ Projet personnel qui a pour but de partager le plus simplement possible les info
 
 - Protéger
 - Examiner
-- Alerter
+- Alerter / Faire alerter
 - Secourir
 
 C'est l'odre dans lequel l'évènement pour porter secours doit se dérouler. Vous allez pouvoir voir cela directement sur le site.
